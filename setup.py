@@ -25,9 +25,15 @@ setup(
 	include_package_data=False,
 	classifiers=[
 		'Programming Language :: Python :: 3.8',
+		'Programming Language :: Python :: 3.9',
+		'Programming Language :: Python :: 3.10',
+		'Programming Language :: Python :: 3.11',
+		'Application Framework :: Liquirizia',
+		'Application Framework :: Liquirizia :: EventBroker',
+		'Application Framework :: Liquirizia :: EventBroker :: AWS :: SimpleNotificationQueueService',
 	],
 	install_requires=[
-		'Liquirizia.EventBroker@git+https://github.com/team-of-mine-labs/Liquirizia.EventBroker.git',
+		'Liquirizia.EventBroker@git+https://github.com/yong5eon/Liquirizia.EventBroker.git',
 		'boto3>=1.24.95'
 	],
 	url='https://github.com/team-of-mine-labs/Liquirizia',
