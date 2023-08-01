@@ -15,12 +15,7 @@ __all__ = (
 
 
 class Consumer(ConsumerBase):
-	"""
-	Consumer of Event Broker for RabbitMQ
-
-	TODO :
-	- support multiple queue consuming
-	"""
+	"""Consumer of Event Broker for AWS Simple Notification Queue Service"""
 
 	INTERVAL = 1000
 

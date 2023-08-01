@@ -3,8 +3,8 @@
 from Liquirizia.EventBroker import Event as EventBase, Error
 from Liquirizia.EventBroker.Errors import *
 
-from Liquirizia.EventBroker.Serializer import SerializerHelper
-from Liquirizia.EventBroker.Serializer.Errors import (
+from Liquirizia.Serializer import SerializerHelper
+from Liquirizia.Serializer.Errors import (
 	NotSupportedError as SerializerNotSupportedError,
 	EncodeError as SerializerEncodeError,
 	DecodeError as SerializerDecodeError,
@@ -22,9 +22,8 @@ __all__ = (
 
 
 class Event(EventBase):
-	"""
-	Event of Event Broker for AWS
-	"""
+	"""Event of Event Broker for AWS Simple Notification Queue Service"""
+
 	def __init__(self, consumer, message, max=0):
 		try:
 			# if 'Type' not in message.message_attributes:

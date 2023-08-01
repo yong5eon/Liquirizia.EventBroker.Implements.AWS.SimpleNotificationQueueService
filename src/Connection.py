@@ -17,9 +17,8 @@ __all__ = (
 
 
 class Connection(ConnectionBase):
-	"""
-	Connection of Event Broker for RabbitMQ
-	"""
+	"""Connection of Event Broker for AWS Simple Notification Queue Service"""
+
 	def __init__(self, conf: Configuration):
 		self.conf = conf
 		self.connection = None
