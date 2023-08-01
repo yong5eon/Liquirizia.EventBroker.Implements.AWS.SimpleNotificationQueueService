@@ -273,7 +273,7 @@ class Queue(QueueBase):
 		self.count = count
 		return
 
-	def recv(self, timeout: int = None):
+	def receive(self, timeout: int = None):
 		try:
 			if not self.responses.empty():
 				return self.responses.get()
