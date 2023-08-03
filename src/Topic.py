@@ -3,8 +3,8 @@
 from Liquirizia.EventBroker import Topic as TopicBase, Error
 from Liquirizia.EventBroker.Errors import *
 
-from Liquirizia.EventBroker.Serializer import SerializerHelper
-from Liquirizia.EventBroker.Serializer.Errors import (
+from Liquirizia.Serializer import SerializerHelper
+from Liquirizia.Serializer.Errors import (
 	NotSupportedError as SerializerNotSupportedError,
 	EncodeError as SerializerEncodeError,
 )
@@ -24,9 +24,8 @@ __all__ = (
 
 
 class Topic(TopicBase):
-	"""
-	Topic of Event Broker for RabbitMQ
-	"""
+	"""Topic of Event Broker for AWS Simple Notification Queue Service"""
+
 	def __init__(self, conf: Configuration, topic: str = None):
 		try:
 			self.conf = conf

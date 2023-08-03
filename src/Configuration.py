@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from Liquirizia.EventBroker.Configuration import Configuration as ConfigurationBase
+from Liquirizia.EventBroker import Configuration as ConfigurationBase
 
 __all__ = (
 	'Configuration'
@@ -8,9 +8,8 @@ __all__ = (
 
 
 class Configuration(ConfigurationBase):
-	"""
-	Configuration Class of Event Broker for AWS
-	"""
+	"""Configuration Class of Event Broker for AWS Simple Notification Queue Service"""
+
 	def __init__(self, token, secret, region, version=None, timeout=None, max=0):
 		self.accessKey = token
 		self.accessSecretKey = secret

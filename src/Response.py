@@ -3,8 +3,8 @@
 from Liquirizia.EventBroker import Response as ResponseBase
 from Liquirizia.EventBroker.Errors import *
 
-from Liquirizia.EventBroker.Serializer import SerializerHelper
-from Liquirizia.EventBroker.Serializer.Errors import (
+from Liquirizia.Serializer import SerializerHelper
+from Liquirizia.Serializer.Errors import (
 	NotSupportedError as SerializerNotSupportedError,
 	DecodeError as SerializerDecodeError,
 )
@@ -15,9 +15,8 @@ __all__ = (
 
 
 class Response(ResponseBase):
-	"""
-	Event of Event Broker for AWS
-	"""
+	"""Response of Event Broker for AWS Simple Notification Queue Service"""
+
 	def __init__(self, message):
 		try:
 			# if 'Type' not in message.message_attributes:
