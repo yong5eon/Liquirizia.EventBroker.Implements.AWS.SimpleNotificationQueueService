@@ -13,8 +13,8 @@ if __name__ == '__main__':
 		'Sample',
 		Connection,
 		Configuration(
-			token='AKIA3XYP2OGW74DPIFEX',
-			secret='PntbOMqwA2AFjEljmaQLPg2H/dhEqdyGYriqvJjR',
+			token='${TOKEN}',
+			secret='${SECRET}',
 			region='ap-northeast-2'
 		)
 	)
